@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="container">
+    <h1><%= pageTitle %></h1>
+    <h2>Welcome to Manga Explorer</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search manga..." />
+      <button onclick="searchManga()">Search</button>
+            <p>Discover and explore your favorite manga series.</p>
+    <p>Search for manga by title, author, or genre.</p>
+    <p>Get the latest updates and recommendations.</p>
+    <p>Please be aware that this website is not fully operational and only shows you the number of chapters of the Manga you search for</p>
+    <p>We are not responsible for any content that is not hosted on this website</p>
+
+    </div>
+    <div id="results"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+<footer>
+  <p>&copy; 2025 Manga Explorer | Built by Tay with MangaDex</p>
+</footer>
+</html>

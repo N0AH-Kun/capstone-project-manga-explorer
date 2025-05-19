@@ -1,0 +1,144 @@
+body {
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://wallpaperaccess.com/full/195679.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: solid 20px #000000;
+}
+h1 {
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  color: white#c0c0c0;
+  text-shadow: 0 0 5px #fcd200, 0 0 10px #fcd589, 0 0 15px #efefef, 0 0 20px #000;
+}
+/* container to center and format the content */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/*search bar and button styles */
+.search-bar {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 20px;
+  border: solid 1px #ffffff;
+  background-color: #ff9d00;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/*container for the results */
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/*individual manga card styles */
+.card {
+  background:-webkit-radial-gradient(circle, #ff9d00, #ffd485);
+  padding: 15px;
+  border-radius: 8px;
+  width: 3000px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/*manga cover image styles */
+.card img {
+  width: 20%;
+  border-radius: 6px;
+}
+
+/*title within the card */
+.card h3 {
+  color: #000000;
+  font-size: 1.5em;
+  margin: 10px 0 5px;
+}
+
+/*description within the card */
+.card p {
+  font-size: 1em;
+  color: #2c2b2b;
+}
+
+/*chapter list styles */
+.chapters {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/*footer styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+.container{
+  flex: 1;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 10px;
+  color: #ffffff;
+  background: -webkit-linear-gradient(circle, #ff9d00 #ffb700, #ffb700, black);
+}
+body p {
+  color: #ffffff;
+  font-size: 10px;
+  text-align: center;
+  margin: 0;
+}
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 10px;
+    text-shadow: 0 0 5px #fcd200, 0 0 10px #fcd589, 0 0 15px #efefef, 0 0 20px #000;
+
+}
+
+/*media query for smaller screens */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 1000%;
+    button {
+      width: 100%;
+    }
+  }
+  
+}
